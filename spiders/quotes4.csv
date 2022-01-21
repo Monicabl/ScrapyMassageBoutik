@@ -1,99 +1,121 @@
-id,title
-Mass1,100% Shea Butter Balm
-Mass2,Thermal Balm
-Mass3,Housses 7 morceaux pour chaise de massage
-Mass4,Lightness Balm
-Mass5,Cream Masso Visage
-Mass6,Arôma-Spas | Lavender Oil
-Mass7,Expresso portable Nomad table
-Mass8,Biogel – Relaxation & Release
-Mass9,"Essential Oil Diffuser / Nebulizer ""Vivi"""
-Mass10,Power degreaser for tables & bolsters
-Mass11,Pierre de Massage - Large
-Mass12,Smokeless Moxa sticks - 5 sticks
-Mass13,Laundry Detergent
-Mass14,Portal Pro massage chair by Oakworks
-Mass15,Complex 25 PLUS - Specialized Complex
-Mass16,Balance
-Mass17,Ens. de 8 bambous + DVD pour massage
-Mass18,Sous-vêtement jetable pour homme - Boxer
-Mass19,Super Orange Degreaser
-Mass20,Single Bottle Holster - With Bottle
-Mass21,Traversin vinyle 1/2 lune
-Mass22,Terry cloth headband (2)
-Mass23,Cercle de réflexologie des Pieds
-Mass24,Terry wrap for women
-Mass25,Fabric Softener - lemon scent
-Mass26,"Essential Oil Diffuser / Nebulizer ""Tripman"""
-Mass27,Porcelain Lava Shells®
-Mass28,Pierre de Massage - Large
-Mass29,Pierre de Massage - Petite
-Mass30,Instant Nomad table with back rest
-Mass31,"Balsam Fir, Abies balsamea"
-Mass32,Good Night
-Mass33,Shoulder pillow (pair) - Cotton & polyester foam
-Mass34,Quilted Headrest Cover
-Mass35,Traversin sarrasin rond 6x12
-Mass36,Nourishing Dry Gray Clay
-Mass37,3 pieces cotton sheet set
-Mass38,Sumo portable Nomad table
-Mass39,100% Natural Massage Gel - Muscle Relief
-Mass40,Muscle & Joint Relief Therapeutic Massage Creme
-Mass41,Bambino - Massage Cream Milk Chocolate
-Mass42,Healthy Benefits Massage Creme
-Mass43,Pulmo Air Balm
-Mass44,Body and Massage Balm – Conception & Baby
-Mass45,Biogel – Muscular & Pulmonary
-Mass46,Biogel – Rich & Creamy
-Mass47,Gift Certificate - pack of 10
-Mass48,Yoga Tune Up® - ROLLS Royce Collection
-Mass49,Paraffin Wax Beads - 1Lb
-Mass50,Gift package- Fruits & Vegetables washing soap
-Mass51,Pair of waterproof vinyl pillowcase- bolster 6x12 inches
-Mass52,Aroma candle for massage
-Mass53,"Aromasol Pin, sapin & Eucalyptus - Brume d'ambiance"
-Mass54,Ventilated washable protective mask - 2 layers
-Mass55,Sheep's Milk Soap - Lavender & Chamomile
-Mass56,Electric Powered Ergonomic Table - 3 Sections
-Mass57,Pedi Spa Nomad Table
-Mass58,3 Piece cotton sheet set - Navy
-Mass59,Love incense stick - 20 stick
-Mass60,Gift card $25
-Mass61,Fabric squares 6x6 inches - 25 units
-Mass62,Coussin de corps en billes de polystyrène - 8x60
-Mass63,NOMAD WOODEN STOOL WITH CASTERS
-Mass64,4 pcs Original Body Cushion
-Mass65,Covers for 6X9 Shoulder Pillow
-Mass66,6X12 Bolster Covers
-Mass67,Housse pour appui-bras latéraux
-Mass68,Pressotherapy Socks - Cotton Knit
-Mass69,Ens. de 8 bambous pour le massage à l'huile
-Mass70,Pregnancy cushion
-Mass71,Hot Shell Belt
-Mass72,Traversin vinyle 1/2 lune
-Mass73,Biodegradable disposabal sheet
-Mass74,Terry mitt/glove (short) - Pair
-Mass75,Coussin appui-tête Mousse Mémoire Nomad
-Mass76,Memory foam ergonomic pillowcases - Pair
-Mass77,Cercle de réflexologie des Pieds
-Mass78,Coussin appui-tête Mousse Mémoire
-Mass79,Curly Fleece Wrap for Women
-Mass80,Kimono bathrobe - Men
-Mass81,Natural Lava Shells®
-Mass82,Nomad Extreme de Luxe with back rest table
-Mass83,Housse de tabouret selle
-Mass84,Saddle ergonomical Stool
-Mass85,Heated rye slippers
-Mass86,Petit bas (Pichous)
-Mass87,Digital Moist Heating Pad - Therathem
-Mass88,Housse de rallonge de table/appui-bras Nomad
-Mass89,ProFlex Nomad Table
-Mass90,Hooded bathrobe -  Men
-Mass91,Nomad Pro Table
-Mass92,7x12 round buckweat bolster - Pair
-Mass93,Traversin sarrasin rond 4x12
-Mass94,Flannel Headrest Cover
-Mass95,3 Pieces Flannel Sheet Set
-Mass96,Jar Holster + 4 oz Jar
-Mass97,Bambino - Massage cream maple cookie
-Mass98,Dual-Purpose Biotone Massage Creme
+id,title,description,link,condition,price,availability,image link,gtin,mpn,brand
+Mass1,Bambino - Massage cream maple cookie,,,new,$9.59,In Stock,,,BAMXXXMER,"
+				    Les Soins Corporels l'Herbier
+				"
+Mass2,Beautiful Legs Gel,,,new,$32.75,In Stock,,,GELXXXJAM,"
+				    Les Soins Corporels l'Herbier
+				"
+Mass3,100% Shea Butter Balm,,,new,$26.25,In Stock,,,,"
+				    Les Soins Corporels l'Herbier
+				"
+Mass4,Arôma-Spas | Lavender Oil,,,new,$20.99,In Stock,,,HUIXXXLAV,"
+				    Les Soins Corporels l'Herbier
+				"
+Mass5,Lightness Balm,,,new,$31.99,In Stock,,,,"
+				    Les Soins Corporels l'Herbier
+				"
+Mass6,Cream Masso Visage,,,new,$20.99,In Stock,,,CREXXXVIS,"
+				    Les Soins Corporels l'Herbier
+				"
+Mass7,Thermal Balm,,,new,$15.99,In Stock,,,,"
+				    Les Soins Corporels l'Herbier
+				"
+Mass8,Expresso portable Nomad table,,,new,$575.00,In Stock,,,,"
+				    Nomad
+				"
+Mass9,Housses 7 morceaux pour chaise de massage,,,new,$39.99,In Stock,,,AH700CM7-XXX,"
+				    Allez Housses
+				"
+Mass10,Biogel – Relaxation & Release,,,new,$9.89,In Stock,,,GELXXXREL,"
+				    Les Soins Corporels l'Herbier
+				"
+Mass11,Power degreaser for tables & bolsters,,,new,$9.99,In Stock,,,IN4-BIOXX,
+Mass12,Laundry Detergent,,,new,$31.99,In Stock,,, ,
+Mass13,Pierre de Massage - Large,,,new,$9.99,In Stock,,,PUGX,
+Mass14,Portal Pro massage chair by Oakworks,,,new,$689.99,In Stock,,,,"
+				    Oakworks
+				"
+Mass15,Smokeless Moxa sticks - 5 sticks,,,new,$8.99,In Stock,,,MB-0115,
+Mass16,"Essential Oil Diffuser / Nebulizer ""Vivi""",,,new,$89.99,In Stock,,,,
+Mass17,Ens. de 8 bambous + DVD pour massage,,,new,$224.99,In Stock,,,1001-CF-DVD,"
+				    Bamboo Fusion
+				"
+Mass18,Sous-vêtement jetable pour homme - Boxer,,,new,$5.99,In Stock,,,MB-CGDW04,
+Mass19,Traversin vinyle 1/2 lune,,,new,$31.99,In Stock,,,TRAV626DL-XXX,
+Mass20,Single Bottle Holster - With Bottle,,,new,$19.99,In Stock,,,CEINTUREPB+B,
+Mass21,Super Orange Degreaser,,,new,$14.99,In Stock,,,COMOR4-PAU,
+Mass22,Terry cloth headband (2),,,new,$9.99,In Stock,,,AH100B-RX2,"
+				    Allez Housses
+				"
+Mass23,Cercle de réflexologie des Pieds,,,new,$24.99,In Stock,,,Revelmains,
+Mass24,Terry wrap for women,,,new,$24.99,In Stock,,,AH410FX-RX,"
+				    Allez Housses
+				"
+Mass25,Instant Nomad table with back rest,,,new,$949.00,In Stock,,,,"
+				    Nomad
+				"
+Mass26,"Essential Oil Diffuser / Nebulizer ""Tripman""",,,new,$55.95,In Stock,,, ,
+Mass27,Fabric Softener - lemon scent,,,new,$24.99,In Stock,,,AHASSOUXX,
+Mass28,Porcelain Lava Shells®,,,new,$39.99,In Stock,,,PSM-LSM,"
+				    LavaShell
+				"
+Mass29,Pierre de Massage - Petite,,,new,$34.95,In Stock,,,PUPX,
+Mass30,"Balsam Fir, Abies balsamea",,,new,$12.37,In Stock,,, ,"
+				    Aliksir
+				"
+Mass31,Pierre de Massage - Large,,,new,$7.99,In Stock,,,PUMX,
+Mass32,Good Night,,,new,$21.04,In Stock,,,CD-BN-XX,"
+				    Aliksir
+				"
+Mass33,Traversin sarrasin rond 6x12,,,new,$15.99,In Stock,,,AH778SV612-XXX,"
+				    Allez Housses
+				"
+Mass34,Quilted Headrest Cover,,,new,$10.00,In Stock,,,AH700HB-M,"
+				    Allez Housses
+				"
+Mass35,Shoulder pillow (pair) - Cotton & polyester foam,,,new,$14.99,In Stock,,,AH00OEC,"
+				    Allez Housses
+				"
+Mass36,3 pieces cotton sheet set,,,new,$54.99,In Stock,,,,"
+				    Allez Housses
+				"
+Mass37,Nourishing Dry Gray Clay,,,new,$22.95,In Stock,,,,"
+				    BioOrigin
+				"
+Mass38,Sumo portable Nomad table,,,new,$399.00,In Stock,,,,"
+				    Nomad
+				"
+Mass39,Muscle & Joint Relief Therapeutic Massage Creme,,,new,$46.99,In Stock,,,MJTMCXXX,"
+				    Biotone
+				"
+Mass40,100% Natural Massage Gel - Muscle Relief,,,new,$19.95,In Stock,,,10-619 / 10-636 / 10-638,"
+				    BioOrigin
+				"
+Mass41,Bambino - Massage Cream Milk Chocolate,,,new,$9.59,In Stock,,,BAMXXXMCH,"
+				    Les Soins Corporels l'Herbier
+				"
+Mass42,Healthy Benefits Massage Creme,,,new,$6.25,In Stock,,,HBBC,"
+				    Biotone
+				"
+Mass43,Body and Massage Balm – Conception & Baby,,,new,$15.99,In Stock,,,,"
+				    Les Soins Corporels l'Herbier
+				"
+Mass44,Pulmo Air Balm,,,new,$15.99,In Stock,,,,"
+				    Les Soins Corporels l'Herbier
+				"
+Mass45,Biogel – Rich & Creamy,,,new,$9.89,In Stock,,,,"
+				    Les Soins Corporels l'Herbier
+				"
+Mass46,Biogel – Muscular & Pulmonary,,,new,$9.89,In Stock,,,,"
+				    Les Soins Corporels l'Herbier
+				"
+Mass47,Gift Certificate - pack of 10,,,new,$5.00,In Stock,,,CC-XX,
+Mass48,Yoga Tune Up® - ROLLS Royce Collection,,,new,$69.99,In Stock,,,YB-RRC,"
+				    Yoga Tune Up
+				"
+Mass49,Paraffin Wax Beads - 1Lb,,,new,$8.99,In Stock,,,,"
+				    Therabath 
+				"
+Mass50,Gift package- Fruits & Vegetables washing soap,,,new,$12.99,In Stock,,,,"
+				    Aurélie Savonnerie artisanale
+				"

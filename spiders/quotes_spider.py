@@ -1,3 +1,4 @@
+from email.quoprimime import quote
 from unicodedata import name
 from urllib import response
 import scrapy
@@ -27,19 +28,19 @@ class QuotesSpuder(scrapy.Spider):
 
     def parse_title(self, response):
         self.countproducts(1)
-        for quote in response.css(".pb-center-column"):
+        for quote in response.css(".primary_block"):
 
             yield {
                 'id' : (f"Mass{self.counter}"),
                 'title' : quote.css("h1::text").get(),
-                'description' : ,
-                'link':,
+                'description' : '',
+                'link': '',
                 'condition' : 'new',
-                'price': ,
+                'price': quote.css("span.price::text").get() ,
                 'availability' : 'In Stock',
-                'image link' : ,
-                'gtin':,
-                'mpn' : '',
-                'brand' : ,
+                'image link' : '',
+                'gtin':'',
+                'mpn' : quote.css("div.referencesmm #product_reference .editable::text").get(),
+                'brand' : quote.css("div.referencesmm #brand a::text").get()
 
             }
