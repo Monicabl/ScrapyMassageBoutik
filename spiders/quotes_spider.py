@@ -32,13 +32,15 @@ class QuotesSpuder(scrapy.Spider):
 
     def parse_title(self, response):
         self.countproducts(1)
-        for quote in response.css(".primary_block"):
+        
+        for quote in response.css(".columns-container"):
             product = quote.css("h1::text").get()
 
             yield {
                 'id' : (f"Mass{self.counter}"),
                 'title' : product,
                 'description' : 'Buy ' + product + ' from Massage Boutik',
+                'full description' : quote.css("div.rte p::text").get(),
                 'link': response.url,
                 'condition' : 'new',
                 'price': quote.css("span.price::text").get() ,
