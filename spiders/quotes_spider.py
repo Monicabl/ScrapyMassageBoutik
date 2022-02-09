@@ -2,6 +2,7 @@ from email.quoprimime import quote
 from os import link
 from unicodedata import name
 from urllib import response
+from numpy import product
 import scrapy
 class QuotesSpuder(scrapy.Spider):
     name = "quotes"
@@ -32,11 +33,12 @@ class QuotesSpuder(scrapy.Spider):
     def parse_title(self, response):
         self.countproducts(1)
         for quote in response.css(".primary_block"):
+            product = quote.css("h1::text").get()
 
             yield {
                 'id' : (f"Mass{self.counter}"),
-                'title' : quote.css("h1::text").get(),
-                'description' : '',
+                'title' : product,
+                'description' : 'Buy' + product + 'from Massage Boutik',
                 'link': response.url,
                 'condition' : 'new',
                 'price': quote.css("span.price::text").get() ,
