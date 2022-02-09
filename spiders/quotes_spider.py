@@ -40,7 +40,7 @@ class QuotesSpuder(scrapy.Spider):
                 'id' : (f"Mass{self.counter}"),
                 'title' : product,
                 'description' : 'Buy ' + product + ' from Massage Boutik',
-                'full description' : quote.css("div.rte p::text").get(),
+                'full description' : quote.css("div.rte::text").get(),
                 'link': response.url,
                 'condition' : 'new',
                 'price': quote.css("span.price::text").get() ,
