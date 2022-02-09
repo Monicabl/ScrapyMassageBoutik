@@ -26,8 +26,8 @@ class QuotesSpuder(scrapy.Spider):
         link = response.urljoin(link)
         yield from response.follow_all(next_page, self.parse_title)
 
-        # pagination_link = response.css('ul.pagination li a')
-        # yield from response.follow_all(pagination_link, self.parse)
+        pagination_link = response.css('ul.pagination li a')
+        yield from response.follow_all(pagination_link, self.parse)
 
 
     def parse_title(self, response):
