@@ -1,4 +1,5 @@
 from email.quoprimime import quote
+from os import link
 from unicodedata import name
 from urllib import response
 import scrapy
@@ -20,6 +21,8 @@ class QuotesSpuder(scrapy.Spider):
 
     def parse(self, response):
         next_page = response.css ('div.product-image-container a')
+        link = response.css('div.product-image-container a::attr(href)').get()
+        link = response.urljoin(link)
         yield from response.follow_all(next_page, self.parse_title)
 
         # pagination_link = response.css('ul.pagination li a')
@@ -34,13 +37,13 @@ class QuotesSpuder(scrapy.Spider):
                 'id' : (f"Mass{self.counter}"),
                 'title' : quote.css("h1::text").get(),
                 'description' : '',
-                'link': '',
+                'link': response.url,
                 'condition' : 'new',
                 'price': quote.css("span.price::text").get() ,
                 'availability' : 'In Stock',
-                'image link' : '',
+                'image link' : quote.css(".pb-left-column div#image-block span#view_full_size img").xpath('@src').get(),
                 'gtin':'',
                 'mpn' : quote.css("div.referencesmm #product_reference .editable::text").get(),
-                'brand' : quote.css("div.referencesmm #brand a::text").get()
+                'brand' : quote.css("div.referencesmm p#brand span a::text").get()
 
             }
