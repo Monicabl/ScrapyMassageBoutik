@@ -38,7 +38,7 @@ class QuotesSpuder(scrapy.Spider):
             yield {
                 'id' : (f"Mass{self.counter}"),
                 'title' : product,
-                'description' : 'Buy' + product + 'from Massage Boutik',
+                'description' : 'Buy ' + product + ' from Massage Boutik',
                 'link': response.url,
                 'condition' : 'new',
                 'price': quote.css("span.price::text").get() ,
