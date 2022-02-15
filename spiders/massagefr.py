@@ -5,7 +5,7 @@ from urllib import response
 from numpy import product
 import scrapy
 class QuotesSpuder(scrapy.Spider):
-    name = "quotes"
+    name = "massagefr"
     counter = 0    
     def countproducts(self, x):
         self.counter = self.counter + x
@@ -14,7 +14,7 @@ class QuotesSpuder(scrapy.Spider):
     def start_requests(self):
         urls=[  
 
-            'https://massageboutik.com/en/183-shop-by-category-massage-boutik-products'
+            'https://massageboutik.com/fr/183-magasiner-tout-produits-massage-boutik'
         ]
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
@@ -38,19 +38,19 @@ class QuotesSpuder(scrapy.Spider):
             if quote.css("div.short-description p::text").get() is not None:
                 description = quote.css("div.short-description *::text").getall()
             else:
-                description = 'Buy ' + product + ' from Massage Boutik'
+                description = 'Acheter ' + product + ' de Massage Boutik'
 
             yield {
-                'id' : (f"Ma{self.counter}"),
-                'title' : product,
+                'identifiant' : (f"Mafr{self.counter}"),
+                'titre' : product,
                 'description' : description,
-                'link': response.url,
-                'condition' : 'new',
-                'price': 'CAD'+quote.css("span.price::text").get() ,
-                'availability' : 'In Stock',
-                'image link' : quote.css(".pb-left-column div#image-block span#view_full_size img").xpath('@src').get(),
+                'lien': response.url,
+                'état' : 'new',
+                'prix': 'CAD'+quote.css("span.price::text").get() ,
+                'disponibilité' : 'In Stock',
+                'lien image' : quote.css(".pb-left-column div#image-block span#view_full_size img").xpath('@src').get(),
                 'gtin':'',
-                'mpn' : quote.css("div.referencesmm #product_reference .editable::text").get(),
-                'brand' : quote.css("div.referencesmm p#brand span a::text").get(), 
+                'référence fabricant' : quote.css("div.referencesmm #product_reference .editable::text").get(),
+                'marque' : quote.css("div.referencesmm p#brand span a::text").get(), 
                 #'color': quote.css('ul#color_to_pick_list li *::attr(name)').getall()
             }

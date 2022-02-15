@@ -5,7 +5,7 @@ from urllib import response
 from numpy import product
 import scrapy
 class QuotesSpuder(scrapy.Spider):
-    name = "quotes"
+    name = "allez"
     counter = 0    
     def countproducts(self, x):
         self.counter = self.counter + x
@@ -14,7 +14,7 @@ class QuotesSpuder(scrapy.Spider):
     def start_requests(self):
         urls=[  
 
-            'https://massageboutik.com/en/183-shop-by-category-massage-boutik-products'
+            'https://www.allezhousses.com/en/183-shop-by-category-allez-housses-products'
         ]
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
@@ -35,13 +35,13 @@ class QuotesSpuder(scrapy.Spider):
         
         for quote in response.css(".columns-container"):
             product = quote.css("h1::text").get()
-            if quote.css("div.short-description p::text").get() is not None:
-                description = quote.css("div.short-description *::text").getall()
+            if quote.css("div.rte p::text").get() is not None:
+                description = quote.css("div.rte *::text").getall()
             else:
-                description = 'Buy ' + product + ' from Massage Boutik'
+                description = 'Buy ' + product + ' from AllezHousses'
 
             yield {
-                'id' : (f"Ma{self.counter}"),
+                'id' : (f"AH{self.counter}"),
                 'title' : product,
                 'description' : description,
                 'link': response.url,
@@ -52,5 +52,4 @@ class QuotesSpuder(scrapy.Spider):
                 'gtin':'',
                 'mpn' : quote.css("div.referencesmm #product_reference .editable::text").get(),
                 'brand' : quote.css("div.referencesmm p#brand span a::text").get(), 
-                #'color': quote.css('ul#color_to_pick_list li *::attr(name)').getall()
             }
