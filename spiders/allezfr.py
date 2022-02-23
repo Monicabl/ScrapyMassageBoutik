@@ -7,9 +7,9 @@ import scrapy
 class QuotesSpuder(scrapy.Spider):
     name = "allezfr"
     counter = 0    
-    def countproducts(self, x):
-        self.counter = self.counter + x
-        print(self.counter)
+    # def countproducts(self, x):
+    #     self.counter = self.counter + x
+    #     print(self.counter)
         
     def start_requests(self):
         urls=[  
@@ -31,7 +31,7 @@ class QuotesSpuder(scrapy.Spider):
 
 
     def parse_title(self, response):
-        self.countproducts(1)
+        # self.countproducts(1)
         
         for quote in response.css(".columns-container"):
             product = quote.css("h1::text").get()
@@ -46,11 +46,11 @@ class QuotesSpuder(scrapy.Spider):
 
 
             yield {
-                'id' : (f"AHfr{self.counter}"),
+                'id' :  quote.css(".productId::text").get(),
                 'title' : product,
                 'description' : description,
                 'link': response.url,
-                'condition' : 'new',
+                'condition' : 'nouveau',
                 'price': 'CAD'+quote.css("span.price::text").get() ,
                 'availability' : 'In Stock',
                 'image link' : quote.css(".pb-left-column div#image-block span#view_full_size img").xpath('@src').get(),
